@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+:root{
+  --col1: #F72585;
+  --col2: #4361ee;
+  --col3: #06d6a0;
+  --bg: #131419;
+  --light: white;
+  --gr1: #4776e6;
+  --gr2: #8E54E9;
+  --gr3: #F72585;
+  --gr4: #ff416c;
+  --gr5: #151e34;
+  --gr6: #231934;
+  --gr7: #c31362;
+  --gr8: #cf2d52;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--gr5);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, var(--gr6), var(--gr5));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, var(--gr6), var(--gr5)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  min-height: 100vh;
+}
+
+.containerLogReg{
+  width: 100%;
+  display: flex;
+}
+
+.box {
+  align-self: flex-end;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  background-color: #F44336;
+  height: 200px;
+  margin: 0 auto 0 auto;
+  transform-origin: bottom;
+  width: 200px;
+}
+.bounce-5 {
+  animation-name: bounce-5;
+  animation-timing-function: ease;
+}
+@keyframes bounce-5 {
+  0%   { transform: scale(1,1)    translateY(0); }
+  10%  { transform: scale(1.1,.9) translateY(0); }
+  30%  { transform: scale(.9,1.1) translateY(-100px); }
+  50%  { transform: scale(1,1)    translateY(0); }
+  57%  { transform: scale(1,1)    translateY(-7px); }
+  64%  { transform: scale(1,1)    translateY(0); }
+  100% { transform: scale(1,1)    translateY(0); }
+}
+
+p{
+  color: var(--light);
+}
+
+.login {
+  display: block;
+  position: relative;
+  width: 350px;
+  padding: 40px 40px 60px;
+
+  text-align: center;
+}
+
+.register{
+  background: var(--gr3);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, var(--gr4), var(--gr3));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, var(--gr4), var(--gr3)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.log{
+  background: var(--gr1);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, var(--gr2), var(--gr1));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, var(--gr2), var(--gr1)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.login h2 {
+  color: var(--light);
+  font-weight: 500;
+}
+
+.login h2 .user {
+  color: var(--light);
+  font-weight: 500;
+}
+
+.login .input {
+  display: block;
+  text-align: left;
+  margin-top: 40px;
+  color: #5a5a5a;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.login .input .inputBox {
+  display: block;
+  color: var(--light);
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+label .forum .input .inputBox{
+  margin-bottom: 50px;
+}
+
+.login .input .inputBox input {
+  width: 100%;
+  height: 50px;
+  background: var(--gr5);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, var(--gr6), var(--gr5));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, var(--gr6), var(--gr5)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border: none;
+  outline: none;
+  padding: 5px 15px;
+  font-size: 18px;
+  color: var(--light);
+}
+
+.submit{
+  background: var(--gr3);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, var(--gr4), var(--gr3));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, var(--gr4), var(--gr3)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: var(--light);
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+}
+
+.login .input .inputBox input[type="submit"] {
+  margin-top: 20px;
+}
+
+.login .input .inputBox input[type="submit"]:hover {
+  color: #cbcbcb;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.login .input .inputBox input[type="submit"]:active {
+  color: #cbcbcb;
+  margin-top: 20px;
+}
+
+.login .input .inputBox input::placeholder {
+  color: #555;
+  font-size: 18px;
+}
+
+.signUp {
+  margin-top: 30px;
+  color: #555;
+  font-size: 12px;
+}
+
+.signUp a {
+  color: var(--light);
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.signUp a:hover {
+  color: #999999;
+  transition: all ease-in-out 0.2s;
+}
+
+.viewPW {
+  user-select: none;
+  font-size: 12px;
+  float: right;
+  margin-top: 5px;
+  color: var(--light);
+}
+
+.viewPW a {
+  user-select: none;
+  text-decoration: none;
+}
+
+.viewPW a:hover {
+  user-select: none;
+  cursor: pointer;
+  color: #242424;
+  transition: all ease-in-out 0.2s;
+}
+
+
+.deleteUser input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  background-color: #ff4778;
+  color: white;
+  padding: 5px;
+  margin: 10px;
+  transition: ease-in-out 0.3s;
+}
+
+.deleteUser input[type="submit"]:hover {
+  border: none;
+  cursor: pointer;
+  background-color: #ff0047;
+  color: white;
+}
+
+input[name="updatePost"]{
+
+}
+
+.login #profile{
+  margin-bottom: 20px;
+}
+
+.error{
+  display: none;
+  text-align: center;
+  margin-top: 30px;
+  color: var(--light);
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.containerPL{
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.loader{
+  position:relative;
+  animation: spinning 2s ease infinite;
+}
+
+@keyframes spinning{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 320px){
+  .login {
+    display: block;
+    position: relative;
+    width: 300px;
+    padding: 40px 40px 60px;
+    background: #131419;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: none !important;
+  }
+}
+
+@media screen and (max-width: 420px){
+  .login {
+    display: block;
+    position: relative;
+    width: 350px;
+    padding: 40px 40px 60px;
+    background: #131419;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: none !important;
+  }
+}
+
+.arrowLeft{
+  margin-right: 5px;
+  animation: blinkSoft ease-in-out 2s infinite;
+}
+
+.pleaseSignIn{
+  display: none;
+
+  height: 3px;
+  width: 100%;
+  margin-top: 5px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--light);
+  animation: underline 2s infinite;
+}
+
+.pleaseSignInText{
+  display:none;
+  text-align: center;
+}
+
+@keyframes blinkSoft {
+  0%{opacity: 0;}
+  50%{opacity: 1; transform: rotate(0deg);}
+100%{opacity: 0; transform: rotate(360deg);}
+}
+
+@keyframes underline {
+  0% {width: 0; opacity: 0;}
+  25%{opacity: 1;}
+  75%{opacity: 1;}
+  100% {width: 100%;opacity: 0;}
+}
